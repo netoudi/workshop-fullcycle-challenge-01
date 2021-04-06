@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    app:
+        build: .docker/app
+        container_name: challenge-01
+        volumes:
+            - .:/app
+        ports:
+            - 8000:8000
